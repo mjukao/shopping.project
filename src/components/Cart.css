@@ -1,0 +1,163 @@
+/* Container */
+.cart {
+   width: 100%;
+   max-width: 800px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .cart:hover {
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ }
+ 
+ /* Cart title */
+ .cart h2 {
+   font-size: 24px;
+   color: #333;
+   margin-bottom: 20px;
+   border-bottom: 2px solid #ddd;
+   padding-bottom: 10px;
+ }
+ 
+ /* Cart items list */
+ .cart-item-list {
+   list-style-type: none;
+   padding: 0;
+ }
+ 
+ .cart-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 0;
+   border-bottom: 1px solid #eee;
+   transition: all 0.3s ease;
+ }
+ 
+ .cart-item:hover {
+   background-color: #f9f9f9;
+   border-radius: 5px;
+ }
+ 
+ /* Image */
+ .cart-image {
+   width: 80px;
+   height: 80px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-right: 20px;
+ }
+ 
+ /* Product description */
+ .cart-item span {
+   flex-grow: 1;
+   font-size: 16px;
+   color: #555;
+ }
+ 
+ /* Remove button */
+ .remove-item-button {
+   background-color: #ff4d4d;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   padding: 10px 14px;
+   cursor: pointer;
+   font-size: 20px;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   margin-left: 10px;
+ }
+ 
+ .remove-item-button:hover {
+   background-color: #ff1a1a;
+   transform: scale(1.1);
+ }
+ 
+ .remove-item-button:active {
+   transform: scale(0.9);
+ }
+ 
+ /* Discount section */
+ .coupon-section {
+   margin: 30px 0;
+ }
+ 
+ .coupon-section h3 {
+   font-size: 18px;
+   color: #333;
+   margin-bottom: 10px;
+ }
+ 
+ .discount-buttons button {
+   background-color: #f5a623;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   margin: 5px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .discount-buttons button:hover {
+   background-color: #e69412;
+   transform: translateY(-3px);
+ }
+ 
+ .discount-buttons button:active {
+   transform: translateY(1px);
+ }
+ 
+ /* Summary section */
+ h3 {
+   font-size: 18px;
+   color: #333;
+   margin-top: 20px;
+ }
+ 
+ .checkout-button {
+   background-color: #00c853;
+   color: white;
+   border: none;
+   padding: 15px;
+   margin-top: 20px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 100%;
+   font-size: 18px;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .checkout-button:hover {
+   background-color: #00b94e;
+   transform: translateY(-3px);
+ }
+ 
+ .checkout-button:active {
+   transform: translateY(1px);
+ }
+ 
+ /* Mobile responsiveness */
+ @media (max-width: 600px) {
+   .cart-item {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .cart-image {
+     width: 100%;
+     height: auto;
+     margin-bottom: 10px;
+   }
+ 
+   .remove-item-button {
+     margin-top: 10px;
+     width: 100%;
+     padding: 10px;
+   }
+ }
+ 

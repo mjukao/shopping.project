@@ -1,0 +1,218 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Keyframes for rotating logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card for generic section */
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Main App Layout */
+.App {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Product list styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 70%;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Cart Styling */
+.cart {
+  width: 28%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  border-left: 2px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Cart Items */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.remove-item-button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.remove-item-button:hover {
+  transform: scale(1.2);
+  color: darkred;
+}
+
+/* Coupon Section */
+.coupon-section {
+  margin-top: 20px;
+}
+
+.discount-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.discount-buttons button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.discount-buttons button:last-child {
+  margin-right: 0;
+}
+
+.discount-buttons button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Checkout Button */
+.checkout-button {
+  background-color: #f66e0d; 
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #ff3c00; 
+  transform: scale(1.05);
+}
+/* เพิ่มคลาสสำหรับราคาสินค้า */
+.product-price {
+  color: black; /* เปลี่ยนสีของราคาเป็นสีดำ */
+  font-size: 18px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* หนักตัวอักษร */
+  margin-top: 10px; /* ช่องว่างด้านบน */
+}
+/* เพิ่มคลาสสำหรับชื่อสินค้า */
+.product-name {
+  color: black; /* เปลี่ยนสีของชื่อสินค้าเป็นสีดำ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* หนักตัวอักษร */
+  margin: 10px 0; /* ช่องว่างด้านบนและล่าง */
+}
